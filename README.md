@@ -35,4 +35,5 @@ You can change the distance on how far the critical and warning are and also cha
 ## License
 This project is open-source. Feel free to use, study, and modify it for your own projects!
 
+## Circuit Diagram
 ![Circuit Diagram](circuit_diagram.png)
