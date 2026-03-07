@@ -10,7 +10,7 @@ This is a simple sonar system that uses a HC-SR04 Ultrasonic sensor thats mounte
 
 ## Software Requirements
 * **Arduino IDE:** v1.8.x or higher recommended
-* **Libraries:** This project uses the standard `Servo.h library` for motor control. No external downloads are required.
+* **Libraries:** This project uses the standard `Servo.h library` for motor control. No external downloads are required
   
 ## Components used
 * Arduino Uno (or compatible)
