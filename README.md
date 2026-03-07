@@ -1,23 +1,22 @@
 # Arduino Sonar System
 
-This is a simple radar system
+This is a simple sonar system that uses a HC-SR04 Ultrasonic sensor thats mounted on a SG90 Servo motor
 
-A simple sonar/radar system using an HC-SR04 Ultrasonic sensor mounted on a sweeping SG90 Servo motor.
+## What does it do?
+* **Distance Detection:** Measures objects up to 350cm
+* **Visual Feedback:** The RGB LED changes its color based on the proximity of the object (Green -> Yellow -> Red)
+* **Audible Alerts:** The Piezo buzzer changes its pitch when objects are in the Crticial (Red) and or Warning (Yellow) zone
+* **Auto Sweep:** The Servo motor moves from 0 to 90 degrees (default) to scan the area. But can be changed in the configuration
 
-## Features
-* **Distance Detection:** Measures range up to 350cm.
-* **Visual Feedback:** RGB LED changes color based on proximity (Green > Yellow > Red).
-* **Audible Alerts:** Piezo buzzer changes pitch when objects are in the "Critical" zone.
-* **Auto-Sweep:** Servo sweeps 90 degrees to scan the area.
-
-## Components
+## Components used
 * Arduino Uno (or compatible)
 * HC-SR04 Ultrasonic Sensor
 * SG90 Servo Motor
 * RGB LED (Common Cathode)
 * Piezo Buzzer
-* 220 Ohm Resistors (for LED)
+* 3x 330 Ohm Resistors (for LED)
 
 ## Setup
-1. Connect the pins as defined in the code (Trig: 13, Echo: 12, Servo: 7).
-2. Open the Serial Monitor at **115200 Baud** to see live distance data.
+1. Connect the pins as defined in the code or follow the circuit diagram
+2. Optional but you can also open the Serial Monitor at **115200 Baud** to see the live distance of the objects infront of the sonar scanner
+### Note: The HC-SR04 has a maximum reliable range of about 400cm. This project is configured to cap the output at 350cm if an object is out of range or no echo is received
