@@ -16,14 +16,14 @@ This is a simple sonar system that uses a HC-SR04 Ultrasonic sensor thats mounte
 * Piezo Buzzer
 * 3x 330 Ohm Resistors (for LED)
 
+## Configuration
+You can change the distance on how far the critical and warning are and also change the sweep range of the servo motor (capped at 180)
+* `DIST_CRITICAL`: Distance for the Red LED / High Pitch alert
+* `DIST_WARNING`: Distance for the Yellow LED / Low Pitch alert
+* `SERVO_MIN_ANGLE`: The minimum sweep limit (default 0°)
+* `SERVO_MAX_ANGLE`: The maximum sweep limit (default 90°, maximum 180°)
+  
 ## Setup
 1. Connect the pins as defined in the code or follow the circuit diagram
 2. Optional but you can also open the Serial Monitor at **115200 Baud** to see the live distance of the objects infront of the sonar scanner
 #### Note: The HC-SR04 has a maximum reliable range of about 400cm. This project is configured to cap the output at 350cm if an object is out of range or no echo is received
-
-## Configuration
-You can change the distance on how far the critical and warning are and also change the sweep range of the servo motor (capped at 180)
-* `DIST_CRITICAL`: Distance for the Red LED / High Pitch alert.
-* `DIST_WARNING`: Distance for the Yellow LED / Low Pitch alert.
-* `SERVO_MIN_ANGLE`: The minimum sweep limit (default 0°).
-* `SERVO_MAX_ANGLE`: The maximum sweep limit (default 90°, maximum 180°).
