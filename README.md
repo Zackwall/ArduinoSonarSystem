@@ -19,4 +19,4 @@ This is a simple sonar system that uses a HC-SR04 Ultrasonic sensor thats mounte
 ## Setup
 1. Connect the pins as defined in the code or follow the circuit diagram
 2. Optional but you can also open the Serial Monitor at **115200 Baud** to see the live distance of the objects infront of the sonar scanner
-### Note: The HC-SR04 has a maximum reliable range of about 400cm. This project is configured to cap the output at 350cm if an object is out of range or no echo is received
+#### Note: The HC-SR04 has a maximum reliable range of about 400cm. This project is configured to cap the output at 350cm if an object is out of range or no echo is received
