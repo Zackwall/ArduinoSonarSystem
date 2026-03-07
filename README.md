@@ -8,6 +8,10 @@ This is a simple sonar system that uses a HC-SR04 Ultrasonic sensor thats mounte
 * **Audible Alerts:** The Piezo buzzer changes its pitch when objects are in the Crticial (Red) and or Warning (Yellow) zone
 * **Auto Sweep:** The Servo motor moves from 0 to 90 degrees (default) to scan the area. But can be changed in the configuration
 
+## Software Requirements
+* **Arduino IDE:** v1.8.x or higher recommended
+* **Libraries:** This project uses the standard `Servo.h library` for motor control. No external downloads are required.
+  
 ## Components used
 * Arduino Uno (or compatible)
 * HC-SR04 Ultrasonic Sensor
@@ -18,8 +22,8 @@ This is a simple sonar system that uses a HC-SR04 Ultrasonic sensor thats mounte
 
 ## Configuration
 You can change the distance on how far the critical and warning are and also change the sweep range of the servo motor (capped at 180)
-* `DIST_CRITICAL`: Distance for the Red LED / High Pitch alert
-* `DIST_WARNING`: Distance for the Yellow LED / Low Pitch alert
+* `DIST_CRITICAL`: Distance (cm) for the Red LED / High Pitch alert
+* `DIST_WARNING`: Distance (cm) for the Yellow LED / Low Pitch alert
 * `SERVO_MIN_ANGLE`: The minimum sweep limit (default 0°)
 * `SERVO_MAX_ANGLE`: The maximum sweep limit (default 90°, maximum 180°)
   
@@ -27,3 +31,6 @@ You can change the distance on how far the critical and warning are and also cha
 1. Connect the pins as defined in the code or follow the circuit diagram
 2. Optional but you can also open the Serial Monitor at **115200 Baud** to see the live distance of the objects infront of the sonar scanner
 #### Note: The HC-SR04 has a maximum reliable range of about 400cm. This project is configured to cap the output at 350cm if an object is out of range or no echo is received
+
+## License
+This project is open-source. Feel free to use, study, and modify it for your own projects!
