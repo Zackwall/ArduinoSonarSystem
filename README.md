@@ -26,4 +26,4 @@ You can change the distance on how far the critical and warning are and also cha
 * `DIST_CRITICAL`: Distance for the Red LED / High Pitch alert.
 * `DIST_WARNING`: Distance for the Yellow LED / Low Pitch alert.
 * `SERVO_MIN_ANGLE`: The minimum sweep limit (default 0°).
-* `SERVO_MAX_ANGLE`: The maximum sweep limit (default 90°, maximum 180).
+* `SERVO_MAX_ANGLE`: The maximum sweep limit (default 90°, maximum 180°).
